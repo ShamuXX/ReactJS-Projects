@@ -6,7 +6,7 @@ function CardTestimonio(props) {
       <img
         className="imagen-testimonio"
         src={require(`../Images/testimonio-${props.imagen}.png`)}
-        alt="Foto de Emma"
+        alt={`Foto de ${props.nombre}`}
       />
       <div className="contenedor-texto">
         <p className="nombre-testimonio">
