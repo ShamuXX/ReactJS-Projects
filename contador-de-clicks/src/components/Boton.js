@@ -1,11 +1,12 @@
 import react from "react";
+import "../styles/styles.css";
 
 function Boton(props) {
   return (
     <button
-      className="boton-click"
+      className={props.botonClick ? "boton-click" : "boton-reiniciar"}
       onClick={
-        props.boton
+        props.botonClick
           ? () => props.setCount(props.count + 1)
           : () => props.setCount(0)
       }

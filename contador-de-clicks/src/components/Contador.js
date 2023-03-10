@@ -1,22 +1,10 @@
 import react, { useState } from "react";
-import Boton from "./Boton.js";
+import "../styles/styles.css";
 
-function Contador() {
-  const [count, setCount] = useState(0);
+function Contador({ count }) {
   return (
-    <div>
-      <div className="contador">
-        <h1>{count}</h1>
-      </div>
-      <div className="contenedor-btn">
-        <Boton text="Click" count={count} setCount={setCount} boton={true} />
-        <Boton
-          text="Reiniciar"
-          boton={false}
-          count={count}
-          setCount={setCount}
-        />
-      </div>
+    <div className="contador">
+      <h1>{count}</h1>
     </div>
   );
 }
